@@ -20,10 +20,9 @@ body {
   background-color: hsl(0, 0%, 100%);
   color: #88908f;
   font-family: "Karla";
-  padding: 2rem;
+  padding: 4rem 2rem;
   border-radius: 1rem;
   font-size: 18px;
-  height: 90vh;
 }
 .container h1 {
   color: #3c4949;
@@ -33,7 +32,12 @@ body {
 .container form {
   width: 100%;
 }
-.container form .name, .container form .e-mail, .container form .qtype, .container form .comment, .container form .check, .container form .sum {
+.container form .name,
+.container form .e-mail,
+.container form .qtype,
+.container form .comment,
+.container form .check,
+.container form .sum {
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -43,17 +47,20 @@ body {
   justify-content: space-between;
   gap: 0.5rem;
 }
-.container form .name > .first, .container form .name > .last {
+.container form .name > .first,
+.container form .name > .last {
   flex: 0 0 45%;
   width: 45%;
 }
-.container form .name > .first > input, .container form .name > .last > input {
+.container form .name > .first > input,
+.container form .name > .last > input {
   width: 100%;
 }
 .container form #email {
   width: 100%;
 }
-.container form label, .container form input {
+.container form label,
+.container form input {
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -79,10 +86,12 @@ body {
   padding: 0.7rem 1.2rem;
   border-radius: 0.5rem;
 }
-.container form .check label, .container form .check input {
+.container form .check label,
+.container form .check input {
   display: inline-block;
 }
-.container form .check label, .container form .check input {
+.container form .check label,
+.container form .check input {
   display: inline-block;
 }
 .container form .check label::after {
@@ -98,7 +107,8 @@ body {
   resize: none;
   padding: 0.7rem 1.2rem;
 }
-.container form .checkb label, .container form .checkb input {
+.container form .checkb label,
+.container form .checkb input {
   display: inline-block;
 }
 .container form .checkb label {
@@ -109,11 +119,30 @@ body {
   background-color: #0c7d69;
   color: hsl(0, 0%, 100%);
   outline: none;
+  margin: 2rem 0;
+  padding: 1.5rem;
 }
 .container form .sum > input:focus {
   border-color: #0c7d69;
 }
 
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: black;
+  }
+  div.flex {
+    display: block;
+  }
+  div.first, div.last {
+    width: 100%;
+  }
+  #lname, #fname {
+    width: 100%;
+  }
+  .check {
+    width: 100%;
+  }
+}
 .container {
   max-width: 800px;
   width: calc(70% - 3rem);
@@ -126,19 +155,4 @@ body {
   justify-content: center;
   height: 100vh;
   align-items: center;
-}
-
-@media (max-width: 600px) {
-  .flex {
-    flex-direction: column;
-  }
-  form .name > .first, form .name > .last {
-    width: 90%;
-  }
-  .name > .first > input, .name > .last > input {
-    width: 90%;
-  }
-  .check {
-    width: 90%;
-  }
 }/*# sourceMappingURL=style.css.map */

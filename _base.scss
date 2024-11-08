@@ -1,127 +1,149 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: $bg ;
-    @extend %center;
+body {
+  background-color: $bg;
+  @extend %center;
 }
-.container{
-    @extend %contain;
-    
-    background-color:$White;
-    color: $colortext;
-    font-family: 'Karla';
-    padding: 2rem;
-    border-radius: 1rem;
-    font-size: $fontSize;
-    height: 90vh;
+.container {
+  @extend %contain;
 
-    h1{
-        color: $colorheader;
-        font-size:1.5rem;
-        margin: 1rem 0;
+  background-color: $White;
+  color: $colortext;
+  font-family: "Karla";
+  padding: 4rem 2rem;
+  border-radius: 1rem;
+  font-size: $fontSize;
 
+  h1 {
+    color: $colorheader;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  form {
+    width: 100%;
+    .name,
+    .e-mail,
+    .qtype,
+    .comment,
+    .check,
+    .sum {
+      width: 100%;
+      margin-bottom: 1rem;
     }
-    form{
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      gap: 0.5rem;
+    }
+    .name > .first,
+    .name > .last {
+      flex: 0 0 45%;
+      width: 45%;
+    }
+    .name > .first > input,
+    .name > .last > input {
+      width: 100%;
+    }
+    #email {
+      width: 100%;
+    }
+    label,
+    input {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    label::after {
+      content: "*";
+      position: absolute;
+      color: $btn;
+      margin-left: 0.3rem;
+    }
+    input {
+      padding: 0.7rem 1.2rem;
+      border-radius: 0.5rem;
+      border: 1px solid $borderc;
+      outline: none;
+      &:focus {
+        border-color: $btn;
+      }
+    }
+    .check {
+      flex: 0 0 45%;
+      width: 45%;
+      border: 1px solid $borderc;
+      padding: 0.7rem 1.2rem;
+      border-radius: 0.5rem;
+      label,
+      input {
+        display: inline-block;
+      }
+      label,
+      input {
+        display: inline-block;
+      }
+      label::after {
+        content: "";
+        position: static;
+      }
+    }
+    #area {
+      width: 100%;
+      height: 4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $borderc;
+      outline: none;
+      resize: none;
+      padding: 0.7rem 1.2rem;
+    }
+    .checkb {
+      label,
+      input {
+        display: inline-block;
+      }
+      label {
+        margin-left: 0.5rem;
+      }
+    }
+    .sum > input {
+      width: 100%;
+      background-color: $btn;
+      color: $White;
+      outline: none;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      &:focus {
+        border-color: $btn;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 700px) {
+
+
+   
+   .flex{
+      display: block;
+     }
+     
+      div.first,div.last{
+
+          width: 100%;
+          display: block;
+        }
+      #lname,#fname{
+        display: block;
+          width: 100%;
+    }
+
+    .check{
+
         width: 100%;
-        .name,.e-mail,.qtype,.comment,.check,.sum{
-            width: 100%;
-            margin-bottom: 1rem;
-        }
-        .flex{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-           
-         gap: .5rem;
-
-        }
-        .name>.first, .name>.last{
-            flex: 0 0 45%;
-            width: 45%;
-        }
-        .name>.first>input, .name>.last>input{
-  
-            width: 100%;
-        }
-        #email{
-            width: 100%;
-        }
-        label,input{
-            display: block;
-            margin-bottom: .5rem;
-        }
-        label::after{
-            content: "*";
-            position: absolute;
-            color: $btn;
-            margin-left: .3rem;
-            
-           }
-        input{
-           padding: .7rem 1.2rem;
-           border-radius: .5rem;
-           border: 1px solid $borderc;
-           outline: none;
-           &:focus{
-            border-color:$btn;
-           }
-        }
-        .check{
-            flex: 0 0 45%;
-            width: 45%;
-            border: 1px solid $borderc;
-            padding: .7rem 1.2rem;
-            border-radius: .5rem;
-            label,input{
-display: inline-block;
-            }
-            label,input{
-                display: inline-block;
-                                
-                
-                            }
-            label::after{
-             content: "";
-             position: static;
-                                
-                
-                            }
-        }
-        #area{
-            width: 100%;
-            height: 4rem;
-            border-radius: .5rem;
-            border: 1px solid $borderc;
-            outline: none;
-            resize: none;
-            padding: .7rem 1.2rem;
-        }
-        .checkb{
-            label,input{
-               display: inline-block;
-            }
-            label{
-                margin-left: .5rem;
-             }
-            
-        }
-        .sum>input{
-            width: 100%;
-            background-color:$btn ;
-            color:$White ;
-            outline: none;
-            &:focus{
-                border-color:$btn ;
-            }
-  
-        }
-    }
+      }
     
- 
+  
 }
-
-
-
