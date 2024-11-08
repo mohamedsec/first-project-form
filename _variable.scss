@@ -1,0 +1,23 @@
+//colors
+$bg : #e0f1e7;
+$btn : #0c7d69;
+$borders : #0c7d69;
+$borderc:#d0d5d4;
+$bordere:#b99093;
+$colortext:#88908f;
+$colorheader:#3c4949;
+$White: hsl(0, 0%, 100%);
+
+$layout-breakpoint-small: 600px;
+
+
+//font
+@font-face {
+    font-family: 'Karla';
+    src: url('C:\Users\Admin\Desktop\Front Mentor\contact-form-main\assets\fonts\Karla-Italic-VariableFont_wght.ttf');
+    src: url('C:\Users\Admin\Desktop\Front Mentor\contact-form-main\assets\fonts\Karla-Italic-VariableFont_wght.ttf') format('truetype'),
+         url('C:\Users\Admin\Desktop\Front Mentor\contact-form-main\assets\fonts\Karla-VariableFont_wght.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+$fontSize: 18px;

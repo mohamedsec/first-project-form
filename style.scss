@@ -1,0 +1,19 @@
+@import "variable", "base", "componet";
+
+@media (max-width: $layout-breakpoint-small) {
+    .flex{
+        flex-direction: column;
+    }
+    form .name>.first,form .name>.last{
+     
+       
+         width:90%;
+     }
+     .name>.first>input, .name>.last>input{
+
+         width: 90%;
+     }
+     .check{
+         width: 90%;
+     }
+ }
