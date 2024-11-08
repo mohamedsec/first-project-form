@@ -36,18 +36,12 @@ body {
     .flex {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-
-      gap: 0.5rem;
+      gap: 1rem;
     }
     .name > .first,
     .name > .last {
-      flex: 0 0 45%;
-      width: 45%;
-    }
-    .name > .first > input,
-    .name > .last > input {
-      width: 100%;
+      flex: 0 0 50%;
+      width: 50%;
     }
     #email {
       width: 100%;
@@ -98,7 +92,7 @@ body {
       border: 1px solid $borderc;
       outline: none;
       resize: none;
-      padding: 0.7rem 1.2rem;
+      padding: 0.8rem 1.2rem;
     }
     .checkb {
       label,
@@ -122,7 +116,7 @@ body {
     }
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
 
 
    
